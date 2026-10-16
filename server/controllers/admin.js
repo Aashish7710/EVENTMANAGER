@@ -4,9 +4,7 @@ import User from "../models/user.js";
 import bcrypt from "bcrypt";
 import mongoose from "mongoose";
 
-// ─────────────────────────────────────────────────────────────────────────────
-// HELPERS
-// ─────────────────────────────────────────────────────────────────────────────
+
 
 const slugify = (text) =>
   text
