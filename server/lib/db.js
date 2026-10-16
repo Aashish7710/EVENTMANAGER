@@ -23,7 +23,7 @@ async function connectDB() {
     "mongodb+srv://choudharyaashish613_db_user:Tanu19092006@cluster0.zyxrpkb.mongodb.net/?appName=Cluster0";
 
   if (!MONGODB_URI) {
-    console.error("❌ CRITICAL ERROR: MONGODB_URI environment variable is missing!");
+    console.error("CRITICAL ERROR: MONGODB_URI environment variable is missing!");
     throw new Error("Please define the MONGODB_URI environment variable in Render environment settings.");
   }
 
@@ -44,7 +44,7 @@ async function connectDB() {
         return mongooseInstance;
       })
       .catch((err) => {
-        console.error("❌ MongoDB Connection Error:", err.message);
+        console.error(" MongoDB Connection Error:", err.message);
         cached.promise = null;
         throw err;
       });
